@@ -42,6 +42,13 @@
   font-family: 'Roboto';
   font-size: 15px;
   color: #475569;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-description {
+    text-align: left;
+  }
 }
 
 .money-manager-heading {
@@ -51,6 +58,17 @@
   color: #0b69ff;
 }
 
+.add-transaction-and-history-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .add-transaction-and-history-container {
+    flex-direction: row;
+  }
+}
+
 .form {
   border: 1px solid #cbd5e1;
   border-radius: 15px;
@@ -58,6 +76,13 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    margin-right: 35px;
+    width: 40%;
+  }
 }
 
 .form-heading {
@@ -119,10 +144,15 @@
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .transaction-history-container {
+    width: 60%;
+  }
+}
+
 .history-heading {
   font-family: 'Roboto';
   font-size: 20px;
-  font-weight: 700;
   color: #334155;
   margin: 0;
 }
@@ -138,6 +168,7 @@
   display: flex;
   padding: 0px 10px 0px 10px;
   border: 1px solid #cbd5e1;
+  justify-content: space-between;
 }
 
 .columns-headings {

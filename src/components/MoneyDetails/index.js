@@ -13,31 +13,37 @@ const MoneyDetails = props => {
         />
         <div className="money-details-description">
           <p className="detail-heading">Your Balance</p>
-          <p className="value">Rs {balanceInput}</p>
+          <p className="value" data-testid="balanceAmount">
+            Rs {balanceInput}
+          </p>
         </div>
       </li>
 
       <li className="money-details-list-item-container income">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
-          alt="balance"
+          alt="income"
           className="symbol-img"
         />
         <div className="money-details-description">
           <p className="detail-heading">Your Income</p>
-          <p className="value">Rs {incomeInput}</p>
+          <p className="value" data-testid="incomeAmount">
+            Rs {incomeInput}
+          </p>
         </div>
       </li>
 
       <li className="money-details-list-item-container expense">
         <img
           src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
-          alt="balance"
+          alt="expenses"
           className="symbol-img"
         />
         <div className="money-details-description">
           <p className="detail-heading">Your Expenses</p>
-          <p className="value">Rs {expenseInput}</p>
+          <p className="value" data-testid="expensesAmount">
+            Rs {expenseInput}
+          </p>
         </div>
       </li>
     </ul>
